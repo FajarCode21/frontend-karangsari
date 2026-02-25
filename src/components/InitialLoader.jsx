@@ -5,15 +5,15 @@ const InitialLoader = () => {
     <div className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-base-100 transition-opacity duration-500">
       {/* Logo */}
       <div className="mb-6 flex flex-col items-center">
-        <div className="w-24 h-24 rounded-full overflow-hidden shadow-lg ring ring-primary ring-offset-4 ring-offset-base-100 animate-pulse">
+        <div className="w-24 h-24 rounded-full overflow-hidden shadow-lg ring ring-error ring-offset-4 ring-offset-base-100 animate-pulse">
           <img
-            src="/img/p1.jpeg"
+            src="/img/p1.jpg"
             alt="Logo"
             className="w-full h-full object-cover"
           />
         </div>
 
-        <h1 className="mt-4 text-2xl font-bold text-primary tracking-wide">
+        <h1 className="mt-4 text-2xl font-bold text-error tracking-wide">
           Desa Karangsari
         </h1>
 
@@ -22,7 +22,7 @@ const InitialLoader = () => {
 
       {/* Progress Bar */}
       <div className="w-64">
-        <progress className="progress progress-primary w-full"></progress>
+        <progress className="progress progress-error w-full"></progress>
       </div>
     </div>
   );
