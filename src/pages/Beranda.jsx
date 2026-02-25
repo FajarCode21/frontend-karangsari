@@ -25,61 +25,64 @@ const Beranda = () => {
   return (
     <div className="flex flex-col gap-4 overflow-hidden">
       <Navbar />
-      <div
-        className="hero min-h-screen"
-        style={{
-          backgroundImage:
-            'url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp)',
-        }}
-      >
-        <div className="hero-overlay"></div>
-        <div className="hero-content text-neutral-content text-center">
-          <div className="max-w-md">
-            <h1 className="mb-5 text-3xl font-bold" data-aos="fade-right">
-              Selamat Datang di
-            </h1>
-            <h2
-              className="mb-5 text-4xl font-bold text-error"
-              data-aos="fade-right"
-            >
-              <ReactTyped
-                strings={['Desa Karangsari']}
-                typeSpeed={100}
-                backSpeed={50}
-                loop
-              />
-            </h2>
-            <p className="mb-5" data-aos="fade-left">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Necessitatibus, assumenda esse laudantium ipsam quos dolore illum
-              ullam voluptas suscipit maiores?
-            </p>
+      <main className="flex-grow">
+        <div
+          className="hero min-h-screen"
+          style={{
+            backgroundImage:
+              'url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp)',
+          }}
+        >
+          <div className="hero-overlay"></div>
+          <div className="hero-content text-neutral-content text-center">
+            <div className="max-w-md">
+              <h1 className="mb-5 text-3xl font-bold" data-aos="fade-right">
+                Selamat Datang di
+              </h1>
+              <h2
+                className="mb-5 text-4xl font-bold text-error"
+                data-aos="fade-right"
+              >
+                <ReactTyped
+                  strings={['Desa Karangsari']}
+                  typeSpeed={100}
+                  backSpeed={50}
+                  loop
+                />
+              </h2>
+              <p className="mb-5" data-aos="fade-left">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus, assumenda esse laudantium ipsam quos dolore
+                illum ullam voluptas suscipit maiores?
+              </p>
 
-            <Link
-              to="/profil"
-              className="btn btn-outline btn-error"
-              data-aos="fade-up"
-            >
-              Tentang Desa
-            </Link>
+              <Link
+                to="/profil"
+                className="btn btn-outline btn-error"
+                data-aos="fade-up"
+              >
+                Tentang Desa
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Tentang Desa */}
-      <Hero title={tentangDesa.title} img={tentangDesa.img}>
-        {tentangDesa.body}
-      </Hero>
+        {/* Tentang Desa */}
+        <Hero title={tentangDesa.title} img={tentangDesa.img}>
+          {tentangDesa.body}
+        </Hero>
 
-      {/* Highlight */}
-      <div className="flex flex-col gap-4 items-center">
-        <h1 className="text-3xl font-bold text-error" data-aos="fade-up">
-          Highlight
-        </h1>
-        <Divider data={higlihtData} />
-      </div>
+        {/* Highlight */}
+        <div className="flex flex-col gap-4 items-center">
+          <h1 className="text-3xl font-bold text-error" data-aos="fade-up">
+            Highlight
+          </h1>
+          <Divider data={higlihtData} />
+        </div>
 
-      <ThemeToggle />
+        <ThemeToggle />
+      </main>
+
       <Footer />
     </div>
   );

@@ -37,38 +37,40 @@ const DetailBerita = () => {
   return (
     <div className="flex flex-col min-h-screen bg-base-200">
       <Navbar />
+      <main className="flex-grow">
+        <div className="container mx-auto px-5 py-12 max-w-4xl mt-10">
+          <div className="card bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src={data.img}
+                alt={data.title}
+                className="w-full h-96 object-cover"
+              />
+            </figure>
 
-      <div className="container mx-auto px-5 py-12 max-w-4xl mt-10">
-        <div className="card bg-base-100 shadow-xl">
-          <figure>
-            <img
-              src={data.img}
-              alt={data.title}
-              className="w-full h-96 object-cover"
-            />
-          </figure>
+            <div className="card-body">
+              <p className="text-sm text-base-content/60">
+                {new Date(data.created_at).toLocaleDateString()}
+              </p>
 
-          <div className="card-body">
-            <p className="text-sm text-base-content/60">
-              {new Date(data.created_at).toLocaleDateString()}
-            </p>
+              <h1 className="text-3xl font-bold">{data.title}</h1>
 
-            <h1 className="text-3xl font-bold">{data.title}</h1>
+              <p className="whitespace-pre-line leading-relaxed text-justify">
+                {data.body}
+              </p>
 
-            <p className="whitespace-pre-line leading-relaxed text-justify">
-              {data.body}
-            </p>
-
-            <div className="card-actions mt-6">
-              <Link to="/berita" className="btn btn-outline">
-                Kembali
-              </Link>
+              <div className="card-actions mt-6">
+                <Link to="/berita" className="btn btn-outline">
+                  Kembali
+                </Link>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <ThemeToggle />
+        <ThemeToggle />
+      </main>
+
       <Footer />
     </div>
   );
