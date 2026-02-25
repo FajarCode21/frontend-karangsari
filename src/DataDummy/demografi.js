@@ -1,17 +1,9 @@
 const demografi = {
   img: '/img/p1.jpg',
   title: 'Data Demografi',
-  body: `1. Komposisi Penduduk
-         Jumlah Jiwa: Diperkirakan terdiri dari sekitar 300 – 500 jiwa (tersebar dalam beberapa Rukun Tetangga/RT).
-         Struktur Keluarga: Rata-rata terdiri dari 100 – 150 Kepala Keluarga (KK).
-         Keseimbangan Gender: Rasio jenis kelamin cenderung seimbang antara laki-laki dan perempuan, dengan persentase penduduk usia produktif yang cukup besar.
-         
-         2. Mata Pencaharian Utama
-         Mayoritas penduduk Karangsari bekerja di sektor agraris:
-         Petani & Buruh Tani: Sektor utama (padi, jagung, kedelai, dan ketela).
-         Peternak: Sapi dan kambing merupakan aset tabungan utama warga.
-         Wiraswasta/Pedagang: UMKM skala rumah tangga dan pedagang pasar.
-         Perantau: Sebagaimana ciri khas warga Gunungkidul, sebagian penduduk usia muda melakukan  urbanisasi (merantau) ke kota besar seperti Yogyakarta, Jakarta, atau luar Jawa, namun tetap tercatat sebagai warga setempat.
+  body: `Penduduk Karangsari diperkirakan berjumlah sekitar 300–500 jiwa yang tersebar di beberapa Rukun Tetangga (RT), dengan rata-rata 100–150 Kepala Keluarga (KK). Komposisi gender relatif seimbang antara laki-laki dan perempuan, sementara proporsi penduduk usia produktif cukup besar, mencerminkan komunitas yang aktif dan mandiri. Struktur keluarga dan jumlah penduduk ini memberikan gambaran tentang kehidupan sosial yang erat dan saling mendukung di lingkungan Karangsari.
+
+Mayoritas penduduk Karangsari bermata pencaharian di sektor agraris. Petani dan buruh tani menjadi sektor utama dengan tanaman seperti padi, jagung, kedelai, dan ketela sebagai sumber penghidupan. Selain itu, peternakan sapi dan kambing menjadi aset penting sebagai tabungan warga. Sebagian warga juga menjalankan usaha kecil skala rumah tangga atau berdagang di pasar. Tak kalah penting, beberapa generasi muda memilih merantau ke kota-kota besar seperti Yogyakarta, Jakarta, atau bahkan luar Jawa, meski tetap tercatat sebagai warga Karangsari, mencerminkan pola urbanisasi yang menjadi ciri khas wilayah ini.
          `,
 };
 

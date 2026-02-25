@@ -52,19 +52,22 @@ const Profil = () => {
             >
               <h1 className="text-3xl font-bold text-error mb-4">Geografis</h1>
 
-              <p className="text-start whitespace-pre-line leading-relaxed">
+              <p className="leading-relaxed">
                 Secara umum, wilayah Kalurahan Pengkol berada pada koordinat:
               </p>
-              <ol>
+
+              <ol className="list-decimal list-inside leading-relaxed mb-2">
                 <li>Lintang Selatan: 7°52′44.699″ LS</li>
-                <li>Bujur Timur: 110°35′54.699′′ BT</li>
+                <li>Bujur Timur: 110°35′54.699″ BT</li>
               </ol>
-              <p>
+
+              <p className="leading-relaxed">
                 Ketinggian berada di zona perbukitan sekitar 300 – 500 mdpl
                 (meter di atas permukaan laut). Padukuhan Karangsari terletak di
                 dalam wilayah Kalurahan Pengkol. Batas wilayah:
               </p>
-              <ol>
+
+              <ol className="list-decimal list-inside leading-relaxed mt-2">
                 <li>Utara: Kapanewon Gedangsari</li>
                 <li>Timur: Kapanewon Ngawen</li>
                 <li>Selatan: Kapanewon Karangmojo & Wonosari</li>
