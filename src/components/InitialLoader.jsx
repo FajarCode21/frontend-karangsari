@@ -1,3 +1,5 @@
+import React from 'react';
+
 const InitialLoader = () => {
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-base-100">
