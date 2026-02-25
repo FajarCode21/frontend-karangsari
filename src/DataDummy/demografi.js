@@ -1,5 +1,5 @@
 const demografi = {
-  img: 'https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp',
+  img: '/img/p1.jpg',
   title: 'Data Demografi',
   body: `1. Komposisi Penduduk
          Jumlah Jiwa: Diperkirakan terdiri dari sekitar 300 – 500 jiwa (tersebar dalam beberapa Rukun Tetangga/RT).
