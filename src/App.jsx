@@ -9,46 +9,37 @@ import DetailBerita from './pages/DetailBerita.jsx';
 import Login from './pages/Login.jsx';
 import DashboardAdmin from './pages/DashboardAdmin.jsx';
 import InitialLoader from './components/InitialLoader.jsx';
+
+const imagesToLoad = [
+  '/img/p1.jpg',
+  '/img/p2.jpg',
+  '/img/p3.jpg',
+  // Tambahkan semua gambar yang ingin preload
+];
+
 const App = () => {
   const [loading, setLoading] = useState(true);
+  const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    const handleLoad = () => {
-      const images = document.querySelectorAll('img');
-      const total = images.length;
+    let loaded = 0;
 
-      if (total === 0) {
-        setLoading(false);
-        return;
-      }
-
-      let loaded = 0;
-
-      images.forEach((img) => {
-        if (img.complete) {
-          loaded++;
-          if (loaded === total) setLoading(false);
-        } else {
-          img.addEventListener('load', () => {
-            loaded++;
-            if (loaded === total) setLoading(false);
-          });
-          img.addEventListener('error', () => {
-            loaded++;
-            if (loaded === total) setLoading(false);
-          });
+    imagesToLoad.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+      img.onload = img.onerror = () => {
+        loaded++;
+        setProgress(Math.round((loaded / imagesToLoad.length) * 100));
+        if (loaded === imagesToLoad.length) {
+          setTimeout(() => setLoading(false), 300);
         }
-      });
-    };
-
-    window.addEventListener('load', handleLoad);
-
-    return () => window.removeEventListener('load', handleLoad);
+      };
+    });
   }, []);
 
   return (
     <>
-      {loading && <InitialLoader />}
+      {loading && <InitialLoader progress={progress} />}
 
       <div
         className={`transition-opacity duration-500 ${
