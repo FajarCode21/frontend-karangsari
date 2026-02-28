@@ -45,9 +45,12 @@ const Layanan = () => {
               <div className="card-body items-center text-center">
                 <h2 className="card-title text-error">Kepala Dukuh</h2>
                 <FaWhatsapp className="text-4xl text-success" />
-                <p className="text-lg font-semibold">08179176313</p>
+                <p className="text-lg font-semibold">+628179176313</p>
                 <div className="card-actions mt-4">
-                  <a href="#" className="btn btn-soft btn-error">
+                  <a
+                    href="https://wa.me/628179176313"
+                    className="btn btn-soft btn-error"
+                  >
                     Hubungi
                   </a>
                 </div>
@@ -61,9 +64,12 @@ const Layanan = () => {
                   Sekretaris Karang Taruna
                 </h2>
                 <FaWhatsapp className="text-4xl text-success" />
-                <p className="text-lg font-semibold">088238996534</p>
+                <p className="text-lg font-semibold">+6288238996534</p>
                 <div className="card-actions mt-4">
-                  <a href="#" className="btn btn-soft btn-error">
+                  <a
+                    href="https://wa.me/6288238996534"
+                    className="btn btn-soft btn-error"
+                  >
                     Hubungi
                   </a>
                 </div>
