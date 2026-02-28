@@ -1,5 +1,5 @@
 const sejarah = {
-  img: '/img/home.webp',
+  img: '/img/sejarah.webp',
   title: 'Sejarah Singkat Padukuhan',
   body: `Nama Karangsari berasal dari perpaduan dua kata bahasa Jawa, yaitu "Karang" yang berarti   pekarangan atau lahan, dan "Sari" yang berarti inti, bunga, atau keindahan. Secara filosofis, nama ini mencerminkan harapan para pendahulu agar wilayah ini menjadi lahan yang subur, indah, dan memberikan kemuliaan bagi penghuninya.
   

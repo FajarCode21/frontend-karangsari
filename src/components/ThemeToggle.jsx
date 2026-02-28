@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { FiSun, FiMoon } from 'react-icons/fi';
 
 function ThemeToggle() {
-  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
+  const [theme, setTheme] = useState(
+    localStorage.getItem('theme') || 'cupcake',
+  );
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
@@ -11,7 +13,7 @@ function ThemeToggle() {
 
   return (
     <button
-      onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+      onClick={() => setTheme(theme === 'cupcake' ? 'forest' : 'cupcake')}
       className="
         fixed bottom-20 right-6
         btn btn-circle btn-primary
@@ -21,7 +23,7 @@ function ThemeToggle() {
         z-50
       "
     >
-      {theme === 'light' ? <FiMoon size={20} /> : <FiSun size={20} />}
+      {theme === 'cupcake' ? <FiMoon size={20} /> : <FiSun size={20} />}
     </button>
   );
 }

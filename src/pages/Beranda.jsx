@@ -35,29 +35,28 @@ const Beranda = () => {
           <div className="hero-overlay"></div>
           <div className="hero-content text-neutral-content text-center">
             <div className="max-w-md">
-              <h1 className="mb-5 text-3xl font-bold" data-aos="fade-right">
+              <h1 className="mb-5 text-xl font-bold" data-aos="fade-right">
                 Selamat Datang di
               </h1>
               <h2
-                className="mb-5 text-4xl font-bold text-error"
+                className="mb-5 text-2xl font-bold text-error"
                 data-aos="fade-right"
               >
                 <ReactTyped
-                  strings={['Desa Karangsari']}
+                  strings={['Padukuhan Karangsari']}
                   typeSpeed={100}
                   backSpeed={50}
                   loop
                 />
               </h2>
-              <p className="mb-5" data-aos="fade-left">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Necessitatibus, assumenda esse laudantium ipsam quos dolore
-                illum ullam voluptas suscipit maiores?
+              <p className="mb-5 text-sm" data-aos="fade-left">
+                Padukuhan Karangsari merupakan salah satu dusun yang terletak di
+                Kalurahan Pengkol, Kapanewon Nglipar, Kabupaten Gunungkidul.
               </p>
 
               <Link
                 to="/profil"
-                className="btn btn-outline btn-error"
+                className="btn btn-outline btn-error text-sm"
                 data-aos="fade-up"
               >
                 Tentang Desa

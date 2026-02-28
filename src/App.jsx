@@ -15,6 +15,8 @@ const imagesToLoad = [
   '/img/annur.webp',
   '/img/balai.webp',
   '/img/sd.webp',
+  '/img/demografi.webp',
+  '/img/sejarah.webp',
 ];
 
 const App = () => {

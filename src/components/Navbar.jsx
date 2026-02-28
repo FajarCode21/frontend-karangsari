@@ -2,7 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 shadow-sm fixed z-10">
+    <div
+      className="navbar fixed top-0 z-50
+  bg-base-100/40 backdrop-blur-lg
+  border-b border-base-300/30
+  shadow-md"
+    >
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -40,12 +45,15 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <Link to="/" className="text-lg font-bold text-error pl-2">
-          Desa Karangsari
-        </Link>
+        <div className="flex flex-col pl-6 min-w-max">
+          <Link to="/" className=" font-bold text-error">
+            Padukuhan Karangsari
+          </Link>
+          <p className="text-xs opacity-70">Nglipar, Pengkol, Karangsari</p>
+        </div>
       </div>
       <div className="navbar-end hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal px-1 font-medium">
           <li>
             <Link to="/">Beranda</Link>
           </li>

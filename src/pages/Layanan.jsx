@@ -35,10 +35,13 @@ const Layanan = () => {
         </div>
 
         {/* Content */}
-        <div className="flex-grow container mx-auto px-5 py-12">
+        <div
+          className="flex-grow container mx-auto px-5 py-12"
+          data-aos="fade-up"
+        >
           <div className="grid gap-8 md:grid-cols-3">
             {/* Kepala Dukuh */}
-            <div className="card bg-base-100 shadow-xl" data-aos="fade-right">
+            <div className="card bg-base-100 shadow-xl">
               <div className="card-body items-center text-center">
                 <h2 className="card-title text-error">Kepala Dukuh</h2>
                 <FaWhatsapp className="text-4xl text-success" />
@@ -52,7 +55,7 @@ const Layanan = () => {
             </div>
 
             {/* Sekretaris Karang Taruna */}
-            <div className="card bg-base-100 shadow-xl" data-aos="fade-up">
+            <div className="card bg-base-100 shadow-xl">
               <div className="card-body items-center text-center">
                 <h2 className="card-title text-error">
                   Sekretaris Karang Taruna
@@ -68,7 +71,7 @@ const Layanan = () => {
             </div>
 
             {/* Instagram */}
-            <div className="card bg-base-100 shadow-xl" data-aos="fade-left">
+            <div className="card bg-base-100 shadow-xl">
               <div className="card-body items-center text-center">
                 <h2 className="card-title text-error">
                   Instagram Karang Taruna
