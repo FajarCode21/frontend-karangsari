@@ -1,5 +1,5 @@
 const demografi = {
-  img: '/img/p1.jpg',
+  img: '/img/home.webp',
   title: 'Data Demografi',
   body: `Penduduk Karangsari diperkirakan berjumlah sekitar 300–500 jiwa yang tersebar di beberapa Rukun Tetangga (RT), dengan rata-rata 100–150 Kepala Keluarga (KK). Komposisi gender relatif seimbang antara laki-laki dan perempuan, sementara proporsi penduduk usia produktif cukup besar, mencerminkan komunitas yang aktif dan mandiri. Struktur keluarga dan jumlah penduduk ini memberikan gambaran tentang kehidupan sosial yang erat dan saling mendukung di lingkungan Karangsari.
 

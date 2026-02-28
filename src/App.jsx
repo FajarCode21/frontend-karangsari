@@ -11,10 +11,10 @@ import DashboardAdmin from './pages/DashboardAdmin.jsx';
 import InitialLoader from './components/InitialLoader.jsx';
 
 const imagesToLoad = [
-  '/img/p1.jpg',
-  '/img/p2.jpg',
-  '/img/p3.jpg',
-  // Tambahkan semua gambar yang ingin preload
+  '/img/home.webp',
+  '/img/annur.webp',
+  '/img/balai.webp',
+  '/img/sd.webp',
 ];
 
 const App = () => {

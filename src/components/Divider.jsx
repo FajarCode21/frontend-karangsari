@@ -42,7 +42,7 @@ const DividerHorizontal = ({ data = [] }) => {
             >
               <div className="text-center p-4 h-full">
                 <h2 className="font-bold">{item.title}</h2>
-                <p className="text-sm">{item.body}</p>
+                <p className="text-sm text-justify ">{item.body}</p>
               </div>
             </div>
           </div>

@@ -29,7 +29,7 @@ const Beranda = () => {
         <div
           className="hero min-h-screen"
           style={{
-            backgroundImage: `url(/img/p1.jpg)`,
+            backgroundImage: `url(/img/home.webp)`,
           }}
         >
           <div className="hero-overlay"></div>
@@ -72,7 +72,7 @@ const Beranda = () => {
         </Hero>
 
         {/* Highlight */}
-        <div className="flex flex-col gap-4 items-center">
+        <div className="flex flex-col gap-4 items-center mt-8">
           <h1 className="text-3xl font-bold text-error" data-aos="fade-up">
             Highlight
           </h1>
